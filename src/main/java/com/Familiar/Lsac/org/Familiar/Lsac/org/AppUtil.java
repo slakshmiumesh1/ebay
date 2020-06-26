@@ -36,7 +36,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class AppUtilWithDesktopScript {
+public class AppUtil {
 	private static Process process;
 	public WebDriver webdriver;
 	public String driverPath;
@@ -96,7 +96,7 @@ public class AppUtilWithDesktopScript {
 			URL url = new URL("http://127.0.0.1:4723/wd/hub");
 			AppiumDriver driver = new AppiumDriver(url, capabilities);
 			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
-			driver.get("http://lsac.org/lsat-prep-get-familiar");
+			driver.get("https://in.ebay.com/");
 			capabilities.setCapability("SESSION_OVERRIDE", true);
 		}
 	}
